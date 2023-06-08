@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+}
+.page {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  background: rgba(red, green, blue, alpha);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.page__content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.page h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.page h3 {
+  font-weight: 300;
+  max-width: 400px;
+  margin-bottom: 3rem;
+}
+.btn {
+  margin-top: 1rem;
+  height: 2rem;
+  width: 5rem;
+  font-size: 0.8rem;
+  font-style: bold;
+  font-weight: 600;
+  border-radius: 0.4rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.flip-clock {
+  --fcc-flip-duration: 0.5s; /* transition duration when flip card */
+  --fcc-digit-block-width: 25px; /* width of digit card */
+  --fcc-digit-block-height: 35px; /* height of digit card, highly recommend in even number */
+  --fcc-digit-font-size: 18px; /* font size of digit */
+  --fcc-digit-color: blue; /* color of digit */
+  --fcc-label-font-size: 12px; /* font size of label */
+  --fcc-label-color: #ffffff; /* color of label */
+  --fcc-background: white; /* background of digit card */
+  --fcc-divider-color: white; /* color of divider */
+  --fcc-divider-height: 0px; /* height of divider */
+  --fcc-separator-size: 4px; /* size of colon */
+  --fcc-separator-color: red; /* color of colon */
+}
+.flip-clock {
+  font-family: "Orbitron";
+}
+
+@media (min-width: 600px) /* adjustment from laptop to mobile*/ {
+  .page h1 {
+    font-size: 4rem;
+  }
+  .page h3 {
+    font-size: 2rem;
+  }
+
+  .flip-clock {
+    --fcc-flip-duration: 0.5s; /* transition duration when flip card */
+    --fcc-digit-block-width: 40px; /* width of digit card */
+    --fcc-digit-block-height: 60px; /* height of digit card, highly recommend in even number */
+    --fcc-digit-font-size: 30px; /* font size of digit */
+    --fcc-digit-color: blue; /* color of digit */
+    --fcc-label-font-size: 16px; /* font size of label */
+    --fcc-label-color: #ffffff; /* color of label */
+    --fcc-background: white; /* background of digit card */
+    --fcc-divider-color: white; /* color of divider */
+    --fcc-divider-height: 0px; /* height of divider */
+    --fcc-separator-size: 6px; /* size of colon */
+    --fcc-separator-color: red; /* color of colon */
+  }
+  .btn {
+    margin-top: 2rem;
+    height: 3rem;
+    width: 7rem;
+    font-size: 1rem;
+    font-style: bold;
+    font-weight: 700;
+    border-radius: 0.4rem;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+  }
+}
