@@ -1,4 +1,4 @@
-# Flip-Count-Counter
+# Flip-Clock-Counter
 React Mini Project
 
 to use : 
